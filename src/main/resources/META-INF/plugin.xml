@@ -1,0 +1,39 @@
+<idea-plugin>
+    <id>com.robret.lujc.cn.redis</id>
+    <name>redis插件</name>
+    <version>1.0</version>
+    <vendor email="jincheng1313@163.com" url="https://github.com/jinchlu/redis-util.git">涛声依旧</vendor>
+
+    <description><![CDATA[永久免费的redis可视化插件，纯个人爱好，持续更新功能。<br>
+          欢迎大家 start，谢谢
+    ]]></description>
+
+    <change-notes><![CDATA[
+      首次搭建开发环境项目内容初始化.<br>
+      <em>2021-09-20</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="com.robret.lujc.cn.redis" text="redisList" description="redisList">
+            <add-to-group group-id="MainMenu" anchor="last"  />
+            <action id="com.robret.lujc.cn.redis.RedisFrame" class="com.robret.lujc.cn.redis.RedisFrame" text="redis"
+                    description="redis">
+            </action>
+        </group>
+
+    </actions>
+
+</idea-plugin>
