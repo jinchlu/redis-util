@@ -22,18 +22,12 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <toolWindow id="redisTools" secondary="true" icon="AllIcons.General.Modified" anchor="right"
+                    factoryClass="com.robret.lujc.cn.redis.RedisWindowFactory"/>
     </extensions>
 
     <actions>
         <!-- Add your actions here -->
-        <group id="com.robret.lujc.cn.redis" text="redisList" description="redisList">
-            <add-to-group group-id="MainMenu" anchor="last"  />
-            <action id="com.robret.lujc.cn.redis.RedisFrame" class="com.robret.lujc.cn.redis.RedisFrame" text="redis"
-                    description="redis">
-            </action>
-        </group>
-
     </actions>
 
 </idea-plugin>

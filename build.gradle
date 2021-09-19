@@ -27,3 +27,7 @@ patchPluginXml {
 test {
     useJUnitPlatform()
 }
+
+tasks.withType(JavaCompiler){
+    options.encoding = "UTF-8"
+}
